@@ -1,4 +1,4 @@
-n = 1000
+n = 243
 m = 998244353
 solution_count = 0
 
@@ -14,7 +14,5 @@ for x in range(-n, n + 1):
             z = -2*(x**2-x*y)/(3*x-2*y)
             if abs(z) <= n and int(z) == z:
                 solution_count += 1
-        else:
-            pass
-
+                
 print (solution_count)
