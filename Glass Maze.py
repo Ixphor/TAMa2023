@@ -7,7 +7,7 @@ def optimize(val, power):
         result = result * val
     return result
 
-n = 2
+n = 4
 b = [[0 for i in range(n)] for j in range(n)]
 
 for i in range(0, n):
@@ -15,7 +15,6 @@ for i in range(0, n):
         exp = 2023*(i+1)*(j+1)
         ans = (optimize(1669661,exp))%998244353
         b[j][i] = ans
-        print(ans)
-        print(b)
         
-    
+for row in b:
+    print (*row)
